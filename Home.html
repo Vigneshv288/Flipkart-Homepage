@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="shortcut icon" type="image/png" href="./Img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/84299d7327.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+  <div class="nav container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./Img/Flipkart_logo.PNG" alt="Flipkart Logo" height="30px"> 
+    </a>
+    <div class="input-group col-lg-6" style="width: 40%;">
+      <input type="text" class="form-control" placeholder="Search for products, brands and more">
+      <span class="input-group-text"><i class="fa fa-search icons"></i></span>
+    </div>
+    <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse text-end justify-content-end h5" id="mynavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <button type="button" class="btn btn-outline-primary dropdown-toggle noHover bg-white px-5 nav-button" data-bs-toggle="dropdown">
+            Login
+          </button>
+          <ul class="dropdown-menu menu-list">
+            <li>
+                <a class="dropdown-item" href="#"><strong>New Customer?</strong> <span style="padding-left: 30px;font-weight: bold;color: rgb(84, 123, 231);">Sign Up</span></a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-user-circle icons"></i> My Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class='fas fa-folder icons'></i> Orders</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="material-icons">favorite</i> Wishlist</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class='fas fa-award icons'></i> Rewards</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-gift icons"></i> Gift Cards</a></li>
+          </ul>
+        </li>
+       <li class="nav-item dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle nav-button noHover" data-bs-toggle="dropdown">
+            More
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="material-icons">notifications</i> Notification Preferences</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="material-icons">business_center</i> Sell on Flipkart</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class='fas fa-question-circle icons'></i>24/7 Customer Care</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="material-icons">trending_up</i> Advertise</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class='fas fa-download icons'></i>Download App</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Filter Section -->
+<div class="navbar navbar-dark navbar-expand-lg justify-content-start"> 
+  <button class="navbar-toggler bg-primary text-white w-100" type="button" data-bs-toggle="collapse" data-bs-target="#myfilter" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Filters
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+  <div class="collapse navbar-collapse justify-content-center bg-white h5" id="myfilter">
+    <div class="navbar-nav">
+      <ul class="filter pt-3 mb-3">               
+<!-- Electronics -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Electronics
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Mobiles</a></li>
+                  <li><a href="#">MI</a></li>
+                  <li><a href="#">Realme</a></li>
+                  <li><a href="#">Samsung</a></li>
+                  <li><a href="#">Infinix</a></li>
+                  <li><a href="#">OPPO</a></li>
+                  <li><a href="#">Apple</a></li>
+                  <li><a href="#">Vivo</a></li>
+                  <li><a href="#">IPhone SE</a></li>
+                  <li><a href="#">Motorola razr</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Mobile Accessories</a></li>
+                  <li><a href="#">Mobile Cases</a></li>
+                  <li><a href="#">SHeadphones & Headsets</a></li>
+                  <li><a href="#">Power Banks</a></li>
+                  <li><a href="#">Screenguards</a></li>
+                  <li><a href="#">Memory Cards</a></li>
+                  <li><a href="#">Smart Headphones</a></li>
+                  <li><a href="#">Mobile Chargers</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Smart Wearable Tech</a></li>
+                  <li><a href="#">Smart Watches</a></li>
+                  <li><a href="#">Smart Glasses</a></li>
+                  <li><a href="#">Smart Bands</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header"><a href="#">Health Care Appliances</a></li>
+                  <li><a href="#">Bp Monitors</a></li>
+                  <li><a href="#">Weighing Scale</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Laptops</a></li>
+                  <li><a href="#">Gaming Laptops</a></li>
+                  <li><a href="#">Desktop PCs</a></li>
+                  <li><a href="#">Gaming & Accessories</a></li>
+                  <li><a href="#">External Hard Disks</a></li>
+                  <li><a href="#">Pendrives</a></li>
+                  <li><a href="#">Laptop Skins & Decals</a></li>
+                  <li><a href="#">Mouse</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Speakers</a></li>
+                  <li><a href="#">Home Audio Speakers</a></li>
+                  <li><a href="#">Home Theatres</a></li>
+                  <li><a href="#">Soundbars</a></li>
+                  <li><a href="#">Bluetooth Speakers</a></li>
+                  <li><a href="#">DTH Set Top Box</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Camera</a></li>
+                  <li><a href="#">DSLR & Mirrorless</a></li>
+                  <li><a href="#">Campact & Bridge Cameras</a></li>
+                  <li><a href="#">Sports & Action</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header"><a href="#">Camera Accessories</a></li>
+                  <li><a href="#">Lens</a></li>
+                  <li><a href="#">Tripods</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!-- TVs & Appliances -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            TVs & Appliances
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Television</a></li>
+                  <li class="dropdown-header"><a href="#">New Launches</a></li>
+                  <li class="dropdown-header"><a href="#">Smart & Ultra HD</a></li>
+                  <li class="dropdown-header"><a href="#">Top Brands</a></li>
+                  <li><a href="#">Mi</a></li>
+                  <li><a href="#">Thomson</a></li>
+                  <li><a href="#">Samsung</a></li>
+                  <li><a href="#">Motorola</a></li>
+                  <li><a href="#">LG</a></li>
+                  <li><a href="#">Nokia</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Washing Machine</a></li>
+                  <li><a href="#">Fully Automatic Front Load</a></li>
+                  <li><a href="#">Semi Automatic Top Load</a></li>
+                  <li><a href="#">Fully Automatic Top Load</a></li>
+                  <li class="dropdown-header"><a href="#">Air Conditioners</a></li>
+                  <li><a href="#">Inverter AC</a></li>
+                  <li><a href="#">Split ACs</a></li>
+                  <li><a href="#">Window ACs</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Shop By Brand</a></li>
+                  <li><a href="#">LG</a></li>
+                  <li><a href="#">Hitachi</a></li>
+                  <li><a href="#">Carrier</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header"><a href="#">Refridgeratores</a></li>
+                  <li><a href="#">Single Door</a></li>
+                  <li><a href="#">Double Door</a></li>
+                  <li><a href="#">Triple Door</a></li>
+                  <li><a href="#">Side by Side</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Kitchen Appliances</a></li>
+                  <li><a href="#">Microwave Ovens</a></li>
+                  <li><a href="#">Oven Toaster Grills (OTG)</a></li>
+                  <li><a href="#">Juicer/Mixer/Grinder</a></li>
+                  <li><a href="#">Electric Kettle</a></li>
+                  <li><a href="#">Induction Cooktops</a></li>
+                  <li><a href="#">Chimneys</a></li>
+                  <li><a href="#">Sandwich Makers</a></li>
+                  <li><a href="#">Pop Up Toasters</a></li>
+                  <li><a href="#">Electric Cookers</a></li>
+                  <li><a href="#">Wet Grinders</a></li>
+                  <li><a href="#">Food Processors</a></li>
+                  <li><a href="#">Coffee Makers</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Small Home Appliances</a></li>
+                  <li><a href="#">Irons</a></li>
+                  <li><a href="#">Water Purifiers</a></li>
+                  <li><a href="#">Fans</a></li>
+                  <li><a href="#">Air Coolers</a></li>
+                  <li><a href="#">Inverters</a></li>
+                  <li><a href="#">Vaccum</a></li>
+                  <li><a href="#">Cleaners</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Buying Guides</a></li>
+                  <li><a href="#">Televisions</a></li>
+                  <li><a href="#">Washing Machines</a></li>
+                  <li><a href="#">Refrigerators</a></li>
+                  <li><a href="#">Air Conditioners</a></li>
+                  <li><a href="#">Water Purifiers</a></li>
+                  <li><a href="#">Air Purifiers</a></li>
+                  <li><a href="#">Chimneys</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!-- Men -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Men
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Footwear</a></li>
+                  <li><a href="#">Sports Shoes</a></li>
+                  <li><a href="#">Casual Shoes</a></li>
+                  <li><a href="#">Formal Shoes</a></li>
+                  <li><a href="#">Sandals & Floaters</a></li>
+                  <li><a href="#">Flip-Flops</a></li>
+                  <li><a href="#">Loafers</a></li>
+                  <li><a href="#">Boots</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Men's Grooming</a></li>
+                  <li><a href="#">Deodrants</a></li>
+                  <li><a href="#">Perfumes</a></li>
+                  <li><a href="#">Beard Care & Grooming</a></li>
+                  <li><a href="#">Shaving & Aftershave</a></li>
+                  <li><a href="#">Dye</a></li>
+                  <li><a href="#">Hair Colouring Paste</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Clothing</a></li>
+                  <li class="dropdown-header"><a href="#">Bottom wear</a></li>
+                  <li><a href="#">Jeans</a></li>
+                  <li><a href="#">Casual Trousers</a></li>
+                  <li><a href="#">Formal Trousers</a></li>
+                  <li><a href="#">Track Pants</a></li>
+                  <li><a href="#">Shorts</a></li>
+                  <li><a href="#">Cargos</a></li>
+                  <li><a href="#">Three Fourths</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Top wear</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                  <li><a href="#">Formal shirts</a></li>
+                  <li><a href="#">Casual shirts</a></li>
+                  <li class="dropdown-header"><a href="#">Suits, Balzers & Waistcoats</a></li>
+                  <li class="dropdown-header"><a href="#">Ties, Stock, Caps & More</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Winter Wear</a></li>
+                  <li><a href="#">Sweatshirts</a></li>
+                  <li><a href="#">Jackets</a></li>
+                  <li><a href="#">Sweater</a></li>
+                  <li><a href="#">Tracksuits</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Ethnic wear</a></li>
+                  <li><a href="#">Kurta</a></li>
+                  <li><a href="#">Ethnic Sets</a></li>
+                  <li><a href="#">Sherwanis</a></li>
+                  <li><a href="#">Ethnic Pyjama</a></li>
+                  <li><a href="#">Dhoti</a></li>
+                  <li><a href="#">Lungi</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!--Women -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Women
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Clothing
+                  </a></li>
+                  <li class="dropdown-header"><a href="#">Women Western & Maternity Wear</a></li>
+                  <li><a href="#">Topwear</a></li>
+                  <li><a href="#">Dresses</a></li>
+                  <li><a href="#">Jeans</a></li>
+                  <li><a href="#">Shorts</a></li>
+                  <li><a href="#">Skirts</a></li>
+                  <li><a href="#">Jeggings & Tights</a></li>
+                  <li><a href="#">Trousers & Capris</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Lingerie & Sleepwear</a></li>
+                  <li><a href="#">Bras</a></li>
+                  <li><a href="#">Panties</a></li>
+                  <li><a href="#">Lingerie Sets</a></li>
+                  <li><a href="#">Night Dresses & Nighties</a></li>
+                  <li><a href="#">Shapewear</a></li>
+                  <li><a href="#">Camisoles & Slips</a></li>
+                  <li class="dropdown-header"><a href="#">Swim & Beachwear</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Ethic Wear</a></li>
+                  <li><a href="#">Sarees</a></li>
+                  <li><a href="#">Kurtas & Kurtis</a></li>
+                  <li><a href="#">Dress Material</a></li>
+                  <li><a href="#">Lehenga Choli</a></li>
+                  <li><a href="#">Blouse</a></li>
+                  <li><a href="#">Kuta Sets & Salwar Suits</a></li>
+                  <li><a href="#">Gowns</a></li>
+                  <li><a href="#">Dupattas</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Ethnic Bottoms</a></li>
+                  <li><a href="#">Leggings & Churidars</a></li>
+                  <li><a href="#">Palazzos</a></li>
+                  <li><a href="#">Shararas</a></li>
+                  <li><a href="#">Salwar & Patiala</a></li>
+                  <li><a href="#">Dhoti Pants</a></li>
+                  <li><a href="#">Ethnic Trousers</a></li>
+                  <li><a href="#">Saree Shapewear & petticoats</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Footwear</a></li>
+                  <li class="dropdown-header"><a href="#">
+                    Sandals</a></li>
+                  <li><a href="#">Flats</a></li>
+                  <li><a href="#">Heels</a></li>
+                  <li><a href="#">Wedges</a></li>
+                  <li class="dropdown-header"><a href="#">Shoes</a></li>
+                  <li><a href="#">Sports Shoes</a></li>
+                  <li><a href="#">Casual Shoes</a></li>
+                  <li><a href="#">Boots</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Beauty & Grooming</a></li>
+                  <li><a href="#">Make Up</a></li>
+                  <li><a href="#">Skin Care</a></li>
+                  <li><a href="#">Hair Care</a></li>
+                  <li><a href="#">Bath & Spa</a></li>
+                  <li><a href="#">Deodrants & Perfumes</a></li>
+                  <li class="dropdown-header"><a href="#">Accessories</a></li>
+                  <li><a href="#">Handbags</a></li>
+                  <li><a href="#">Shoulder Bags</a></li>
+                  <li><a href="#">Sling Bags</a></li>
+                  <li><a href="#">Clutches</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!-- Baby & Kids -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Baby & Kids
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Kids Clothing</a></li>
+                  <li class="dropdown-header"><a href="#">Boys' Clothing</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                  <li><a href="#">Ethnic Wear</a></li>
+                  <li><a href="#">Shorts</a></li>
+                  <li><a href="#">Shirts</a></li>
+                  <li><a href="#">Innerwear</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Girls' Clothing</a></li>
+                  <li><a href="#">Dresses & Skirts</a></li>
+                  <li><a href="#">Ethnic Wear</a></li>
+                  <li><a href="#">T-shirts & Tops</a></li>
+                  <li><a href="#">Innerwear</a></li>
+                  <li class="dropdown-header"><a href="#">Baby Boys' clothing</a></li>
+                  <li class="dropdown-header"><a href="#">Baby Girls' Clothing</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Kids's Footwear</a></li>
+                  <li class="dropdown-header"><a href="#">Boys's Footwear</a></li>
+                  <li><a href="#">Sandals</a></li>
+                  <li><a href="#">Sport Shoes</a></li>
+                  <li class="dropdown-header"><a href="#">Girls' Footwear</a></li>
+                  <li><a href="#">Flats & Bellies</a></li>
+                  <li><a href="#">Sport Shoes</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Toys</a></li>
+                  <li><a href="#">Remote Control Toys</a></li>
+                  <li><a href="#">Educational Toys</a></li>
+                  <li><a href="#">Soft Toys</a></li>
+                  <li><a href="#">Cars & Die-cast Vehicles</a></li>
+                  <li><a href="#">Outdoor Toys</a></li>
+                  <li><a href="#">Board Games</a></li>
+                  <li><a href="#">Puzzles</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">School Supplies</a></li>
+                  <li><a href="#">School Bags</a></li>
+                  <li><a href="#">Luch Bags</a></li>
+                  <li><a href="#">Water Bottles</a></li>
+                  <li><a href="#">Paper Charts</a></li>
+                  <li><a href="#">Tool Box</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Baby Care</a></li>
+                  <li><a href="#">Diapers</a></li>
+                  <li><a href="#">Wipers</a></li>
+                  <li><a href="#">Baby Grooming</a></li>
+                  <li><a href="#">Baby Oral Care</a></li>
+                  <li><a href="#">Baby Food</a></li>
+                  <li><a href="#">Baby Gear</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!-- Home & Furniture -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Home & Furniture
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Kitchen, Cookware & Serveware</a></li>
+                  <li><a href="#">Pans</a></li>
+                  <li><a href="#">Tawas</a></li>
+                  <li><a href="#">Pressure Cookers</a></li>
+                  <li><a href="#">Kitchen tools</a></li>
+                  <li><a href="#">Gas Stoves</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Litchen Storage</a></li>
+                  <li><a href="#">Water Bottles</a></li>
+                  <li><a href="#">Lunch Boxes</a></li>
+                  <li><a href="#">Flasks</a></li>
+                  <li><a href="#">Casseroles</a></li>
+                  <li><a href="#">Kitchen Containers</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Living Room Furniture</a></li>
+                  <li><a href="#">Sofa</a></li>
+                  <li><a href="#">Sofa Beds</a></li>
+                  <li><a href="#">TV Units</a></li>
+                  <li><a href="#">Dining Tables & Chairs</a></li>
+                  <li><a href="#">Shoe Racks</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Furnishing</a></li>
+                  <li><a href="#">Bedsheets</a></li>
+                  <li><a href="#">Blankets</a></li>
+                  <li><a href="#">Cushions & Pillows</a></li>
+                  <li><a href="#">Kitchen & Table Linen</a></li>
+                  <li><a href="#">Curtains</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Home Improvement</a></li>
+                  <li><a href="#">Bathroom & Kitchen Fittings</a></li>
+                  <li><a href="#">Smart Door Locks</a></li>
+                  <li><a href="#">Tooles & Measuring Equipments</a></li>
+                  <li><a href="#">Home Utilities & Organizers</a></li>
+                  <li><a href="#">Lawn & Gardening</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Home Lighting</a></li>
+                  <li><a href="#">Bulbs</a></li>
+                  <li><a href="#">Wall Lamp</a></li>
+                  <li><a href="#">Table Lamp</a></li>
+                  <li><a href="#">Ceiling Lamp</a></li>
+                  <li><a href="#">Emergency Lights</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!-- Sports, Books & More -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Sports, Books & More
+          </button>
+          <ul class="dropdown-menu multi-column" style="left:30px;">
+            <div class="row">
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Soprts</a></li>
+                  <li><a href="#">Cricket</a></li>
+                  <li><a href="#">Badminton</a></li>
+                  <li><a href="#">Cycling</a></li>
+                  <li><a href="#">Football</a></li>
+                  <li><a href="#">Skating</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Exercise Fitness</a></li>
+                  <li><a href="#">Cardio Equipment</a></li>
+                  <li><a href="#">Home Gyms</a></li>
+                  <li><a href="#">Dumbbells</a></li>
+                  <li><a href="#">Yoga mat</a></li>
+                  <li><a href="#">Gym Gloves</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Food Essentials</a></li>
+                  <li><a href="#">Nuts & Gry Fruits</a></li>
+                  <li><a href="#">tea, Coffee and Beverages</a></li>
+                  <li><a href="#">Chocolates</a></li>
+                  <li><a href="#">Snacks Corner</a></li>
+                  <li><a href="#">Jams, Spreads and Honey</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Health & Nutrition</a></li>
+                  <li><a href="#">All Supplements</a></li>
+                  <li><a href="#">Protein Supplements</a></li>
+                  <li><a href="#">Vitamin Supplements</a></li>
+                  <li><a href="#">Health Drinks</a></li>
+                  <li><a href="#">Ayurvedic Supplements</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Books</a></li>
+                  <li><a href="#">Academics</a></li>
+                  <li><a href="#">E-Learning</a></li>
+                  <li><a href="#">Entrance Exams</a></li>
+                  <li><a href="#">Literature & Fiction</a></li>
+                  <li><a href="#">Young Readers</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <ul class="multi-column-dropdown">
+                  <li class="dropdown-header"><a href="#">Stationery</a></li>
+                  <li><a href="#">Pens</a></li>
+                  <li><a href="#">Diaries</a></li>
+                  <li><a href="#">Card Holders</a></li>
+                  <li><a href="#">Calculators</a></li>
+                  <li><a href="#">Desk Organizers</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+<!-- Price Range Option -->
+        <li class="dropdown">  
+          <button type="button" class="btn dropdown-toggle filter-button" data-bs-toggle="dropdown">
+            Price Range
+          </button>
+          <div class="dropdown-menu">
+            <form action="/action_page.php" method="get">
+              <label for="price" class="small h1 ms-3">Price</label>
+              <input type="range" id="price" name="price" min="100" max="10000"><span id="range" class="small h1 px-3"></span>
+              <input type="number" id="price" style="width: 100px;"><span id="range" class="small h1 px-3"></span>
+              <script>
+                var slider = document.getElementById("price");
+                var output = document.getElementById("range");
+                output.innerHTML = slider.value;
+              
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+              </script>
+            </form>
+          </div>
+        </li>
+        <li type="button" class="btn filter-button">Offer Zone</li>
+        <li type="button" class="btn filter-button">Grocery</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel Section -->
+<div id="demo" class="carousel slide mb-3 mx-3" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Img/Carousel_1.png" alt="Offer1" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="./Img/Carousel_2.jpg" alt="Chicago" class="d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="./Img/Carousel_3.jpg" alt="New York" class="d-block">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span><i class="fa fa-chevron-left" style="font-size:24px"></i></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span><i class="fa fa-chevron-right" style="font-size:24px"></i></span>
+  </button>
+</div>
+
+<!-- Deals Display -->
+<div class="mx-3 mt-3 bg-white p-3">
+  <div class="row">
+    <div class="h4 col-sm-10">Deals of the Day</div>
+    <div class="col-sm-2">
+      <button class="btn bg-primary text-white">View All</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row zoom">
+    <div class="col-lg-2 item-text gallery">
+      <a href="">
+        <div class="item-img"><img src="./Img/Deals_1.jpeg" alt="Car"></div>
+        <div class="desc">
+          <span class="h1">Remote Control, Board</span><br>
+          <span class="h2">Upto 70% + Extra 10% OFF</span><br>
+          <span class="h3">Hot Wheels, Nerf, Barble</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Deals_2.jpeg" alt="Bed"></div>
+        <div>
+          <span class="h1">Bedsheets, Bath Towels</span><br>
+          <span class="h2">From &#x20b9;99+Extra 10% OFF</span><br>
+          <span class="h3">Grab Or Gone...!</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Deals_3.jpeg" alt="Shoe"></div>
+        <div>
+          <span class="h1">Sparx, Asian, Aadi</span><br>
+          <span class="h2">From &#x20b9;199 + Extra 10% OFF</span><br>
+          <span class="h3">Casual Shoes For Men's</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Deals_4.jpeg" alt="Watch"></div>
+        <div>
+          <span class="h1">Fastrack, Timex, Sonata</span><br>
+          <span class="h2">Upto 75% + Extra 10% OFF</span><br>
+          <span class="h3">Grab Before Its Gone!!</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Deals_5.jpeg" alt="Pant"></div>
+        <div>
+          <span class="h1">Puma, ADIDAS, Killer</span><br>
+          <span class="h2">Min 60% + Extra 10% OFF</span><br>
+          <span class="h3">Trackpants, Tracksuits</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Deals_6.jpeg" alt="Bangles"></div>
+        <div>
+          <span class="h1">Jewellery Set, Bangles</span><br>
+          <span class="h2">Under &#x20b9;499 + Extra 10% OFF</span><br>
+          <span class="h3">#BudjetBuys</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Top Deals on Accessories -->
+<div class="mx-3 mt-3 bg-white p-3">
+  <div class="row">
+    <div class="h4 col-sm-10">Top Deals on Accessories</div>
+    <div class="col-sm-2">
+      <button class="btn bg-primary text-white">View All</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row zoom">
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Accessories_1.jpeg" alt="Accessories_1"></div>
+        <div>
+          <span class="h1">Best Brands</span><br>
+          <span class="h2">Shop Now</span><br>
+          <span class="h3">For All Phone Models</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Accessories_2.jpeg" alt="Accessories_2"></div>
+        <div>
+          <span class="h1">Mobile Holders</span><br>
+          <span class="h2">From &#x20b9;99</span><br>
+          <span class="h3">Relax your hand while Holding</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Accessories_3.jpeg" alt="Accessories_3"></div>
+        <div>
+          <span class="h1">Webcams</span><br>
+          <span class="h2">From &#x20b9;490</span><br>
+          <span class="h3">Logitech, Quantun & more</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Accessories_4.jpeg" alt="Accessories_4"></div>
+        <div>
+          <span class="h1">Glass Cases</span><br>
+          <span class="h2">Shop Now</span><br>
+          <span class="h3">For All Phone Models</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Accessories_5.jpeg" alt="Accessories_5"></div>
+        <div>
+          <span class="h1">Best Selling Games</span><br>
+        <span class="h2">From &#x20b9;299</span><br>
+        <span class="h3">For PS4, Xbox One & PC</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Accessories_6.jpeg" alt="Accessories_6"></div>
+        <div>
+          <span class="h1">Laptop Keyboards & Computers</span><br>
+          <span class="h2">From &#x20b9;379</span><br>
+          <span class="h3">Wired Wireless</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Men's Footwear -->
+<div class="mx-3 mt-3 bg-white p-3">
+  <div class="row">
+    <div class="h4 col-sm-10">Men's Footwear</div>
+    <div class="col-sm-2">
+      <button class="btn bg-primary text-white">View All</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row zoom">
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Shoe_1.jpeg" alt="Shoe_1"></div>
+        <div>
+          <span class="h1">Best Selling Footwear</span><br>
+          <span class="h2">From &#x20b9;199</span><br>
+              <span class="h3">Men's Casual Shoes</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Shoe_2.jpeg" alt="Shoe_2"></div>
+        <div>
+          <span class="h1">Nike, Puma, Reebook</span><br>
+          <span class="h2">Upto 60% OFF</span><br>
+          <span class="h3">Cricket Shoes</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Shoe_3.jpeg" alt="Shoe_3"></div>
+        <div>
+          <span class="h1">Nike, ASICS, Skechers</span><br>
+          <span class="h2">Explore More!!</span><br>
+          <span class="h3">Sports Shoe</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Shoe_4.jpeg" alt="Shoe_4"></div>
+        <div>
+          <span class="h1">Season's Best Seller</span><br>
+          <span class="h2">From &#x20b9;149</span><br>
+          <span class="h3">Sandals, Slippers & more</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Shoe_5.jpeg" alt="Shoe_5"></div>
+        <div>
+          <span class="h1">Nike, ADIDAS, Puma</span><br>
+          <span class="h2">Upto 60% OFF</span><br>
+          <span class="h3">Running Shoes</span>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2 item-text">
+      <a href="">
+        <div class="item-img"><img src="./Img/Shoe_6.jpeg" alt="Shoe_6"></div>
+        <div>
+          <span class="h1">Campus, Yonex & more</span><br>
+          <span class="h2">From &#x20b9;499</span><br>
+          <span class="h3">Sports Shoes</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="foot-section" class="container-fluid p-3 mt-3">
+  <div class="row pt-3 ps-3">
+    <div class="Container col-lg-2 mb-3">
+      <p>ABOUT</p>
+          <div><a href="">Contact Us</a></div>
+          <div><a href="">About Us</a></div>
+          <div><a href="">Careers</a></div>
+          <div><a href="">Flipkark Stories</a></div>
+          <div><a href="">Press</a></div>
+          <div><a href="">Flipkart Wholesale</a></div>
+          <div><a href="">Corporate Information</a></div>
+    </div>
+    <div class="Container col-lg-2 mb-3">
+      <p>HELP</p>
+        <div><a href="">Payments</a></div>
+        <div><a href="">Shipping</a></div>
+        <div><a href="">Cancellation & Returns</a></div>
+        <div><a href="">FAQ</a></div>
+        <div><a href="">Report Infringement</a></div>
+    </div>
+    <div class="Container col-lg-2 mb-3">
+      <p>POLICY</p>
+        <div><a href="">Return Policy</a></div>
+        <div><a href="">Terms Of Use</a></div>
+        <div><a href="">Security</a></div>
+        <div><a href="">Privacy</a></div>
+        <div><a href="">Sitemap</a></div>
+        <div><a href="">EPR Compliance</a></div>
+    </div>
+    <div class="Container col-lg-1 mb-3">
+      <p>SOCIAL</p>
+        <div><a href="">Facebook</a></div>
+        <div><a href="">Twitter</a></div>
+        <div><a href="">YouTube</a></div>
+    </div>
+    <div class="Container col-lg-3 foot-border mb-3">
+      <p>Mail Us:</p>
+        <div>Flipkart Internet Private Limited,</div>
+        <div>Buildings Alyssa, Begonia &</div>
+        <div>Clove Embassy Tech Village,</div>
+        <div>Outer Ring Road, Devarabeesanahalli Village,</div>
+        <div>Bengaluru, 560103,</div>
+        <div>Karnataka, India</div>
+    </div>
+    <div class="Container col-lg-2 mb-3">
+      <p>Registered Office Address:</p>
+        <div>Flipkart Internet Private Limited,</div>
+        <div>Buildings Alyssa, Begonia &</div>
+        <div>Clove Embassy Tech Village,</div>
+        <div>Outer Ring Road, Devarabeesanahalli Village,</div>
+        <div>Bengaluru, 560103,</div>
+        <div>Karnataka, India</div>
+        <div>CIN : U51109KA2012PTC066107</div>
+        <div>Telephone: 1800 202 9898</div>
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 mb-3"><a href=""><i class="fas fa-shopping-bag foot-icons"></i> Sell On Flipkart</a></div>
+      <div class="col-lg-2 mb-3"><a href=""><i class='fas fa-poll foot-icons'></i>Advertise</a></div>
+      <div class="col-lg-2 mb-3"><a href=""><i class='fas fa-question-circle foot-icons'></i>Help Center</a></div>
+      <div class="col-lg-2 mb-3">© 2007-2021 Flipkart.com</div>
+      <div class="col-lg-4 mb-3"><img src="./Img/payment-method.svg"></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
